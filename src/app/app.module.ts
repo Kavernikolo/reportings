@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+  import { ChartsModule, WavesModule } from 'angular-bootstrap-md'
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
@@ -14,6 +15,8 @@ import { PieChartComponent } from './pie-chart/pie-chart.component';
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    ChartsModule,
+    WavesModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'stats', component: StatsComponent },
