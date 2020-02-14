@@ -1,9 +1,18 @@
 <app-top-bar></app-top-bar>
-
-<div class="container">
-  <router-outlet></router-outlet>
+<div>
+<div id = "left-menu" style="width:10%; align-left">
+<a [routerLink]="['/stats']">
+<h2>Statistiche</h2>
+</a>
+<a [routerLink]="['/reports']">
+<h2>Report</h2>
+</a>
 </div>
 
+<div class="container" style="width:75%; align-right">
+  <router-outlet></router-outlet>
+</div>
+</div>
 <!-- 
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that

@@ -5,21 +5,29 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { ProductListComponent } from './product-list/product-list.component';
+import { HomeComponent } from './home/home.component'
+import { StatsComponent } from './stats/stats.component';
+import { ReportsComponent } from './reports/reports.component';
+import { PieChartComponent } from './pie-chart/pie-chart.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
+      { path: '', component: HomeComponent },
+      { path: 'stats', component: StatsComponent },
+      { path: 'reports', component: ReportsComponent },
     ])
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
-    ProductListComponent
-  ],
+    HomeComponent,
+    StatsComponent,
+    ReportsComponent,
+    PieChartComponent
+    ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
