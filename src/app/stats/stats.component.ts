@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import {Chart, ChartConfiguration} from 'chart.js'
+import {Chart, ChartConfiguration} from 'chart.js';
+
 @Component({
   selector: 'app-stats',
   templateUrl: './stats.component.html',
   styleUrls: ['./stats.component.css']
 })
 export class StatsComponent implements OnInit {
+  
  ngOnInit() {
-  this.updateDatasetsAndLabels()
 };
   public chartType: string = 'pie';
 
